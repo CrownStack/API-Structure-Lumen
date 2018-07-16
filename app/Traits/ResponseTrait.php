@@ -45,7 +45,7 @@ trait ResponseTrait {
      * @return string
      */
 
-    protected function responseSerialize($status) {
+    protected function responseSerialize($status=true) {
         $this->responseString['status'] = $status ? config('messages.SUCCESS') : config('messages.FAILURE');
         $this->responseString['data'] = $this->transformer();
         $this->responseString['error'] = (object) array(

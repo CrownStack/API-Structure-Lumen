@@ -41,7 +41,7 @@ class BasicAuthController extends Controller {
         /**
          * Return response as application/json
          */
-        return response()->json($this->responseSerialize(true));
+        return response()->json($this->responseSerialize());
     }
 
 }
