@@ -1,5 +1,10 @@
 <?php
 
+header('Access-Control-Allow-Methods: POST, DELETE, PUT, GET, OPTIONS');
+header("Access-Control-Allow-Headers: Content-Type, oauth, session, User-Agent, X-Requested-With, If-Modified-Since, X-File-Name, Cache-Control");
+define('LARAVEL_START', microtime(true));
+
+
 /*
 |--------------------------------------------------------------------------
 | Create The Application
