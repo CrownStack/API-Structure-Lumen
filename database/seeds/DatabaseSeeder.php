@@ -11,6 +11,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call('BasicAuthSeeder');
+        $this->call(BasicAuthSeeder::class);
     }
 }
